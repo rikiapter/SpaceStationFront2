@@ -20,4 +20,13 @@ export class AppService {
       }
     );
   }
+
+  setissnowAsync(issnow:IssNow): Observable< Array<IssNow>> {
+    return this.http.post<Array<IssNow>>('https://localhost:44389/Iss/AddIssData',issnow).pipe(
+   
+      error => {
+        return error;
+      }
+    );
+  }
 }

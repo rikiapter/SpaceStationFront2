@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>טופס הוספת רשומה</h1>
+<form #Note="ngForm" (ngSubmit)="check(Note.value)"> 
+    <input type="text" name="note" placeholder="note" ngModel> 
+    <br/> 
+    <br/> 
+    <input type="submit" value="שלח"> 
+  </form>
